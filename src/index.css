@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 기본 베이스(가볍지 않게, 고급 톤) */
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-slate-900 antialiased;
+    @apply dark:bg-brand-dark dark:text-slate-100;
+    font-family: Inter, Pretendard, system-ui, sans-serif;
+  }
+
+  a {
+    @apply text-slate-900 dark:text-slate-100;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
