@@ -21,9 +21,10 @@ export default function ContactSection() {
     e.preventDefault()
     setStatus({ state: 'loading', message: '제출 중입니다...' })
     try {
-      const res = await fetch('https://script.google.com/macros/s/AKfycbzASGznabb9uNtJj6Kj-4JjCv8ijUzDjAYBcxZogUKWEmsXBOddfoaIYTu1u7exLUJH/exec', {
+      const res = await fetch('https://script.google.com/macros/s/AKfycbwtrCmP8bsc3qFlEfn_6JjjWJLmI_rub9ZyFoN54bLERjYP5a7fRIVIL9-aHR3FdEjc/exec', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        //headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'text/plain' },
         body: JSON.stringify(form),
       })
       if (!res.ok) throw new Error('failed')
