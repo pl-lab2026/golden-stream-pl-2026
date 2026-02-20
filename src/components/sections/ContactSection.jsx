@@ -41,9 +41,11 @@ export default function ContactSection() {
   return (
     <section id="contact" className="bg-slate-900 py-20 text-white md:py-28">
       <div className="mx-auto max-w-5xl px-5">
-        <p className="text-sm font-semibold uppercase tracking-[0.15em] text-slate-400">Contact</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.15em] text-slate-400">
+          {/* Contact */}
+        </p>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-          당신의 자산 경영, 지금 시작하십시오.
+          당신의 자산 운용, 지금 시작하십시오.
         </h2>
         <p className="mt-3 text-slate-300">
           상담 신청을 남겨주시면, 1차 유선 인터뷰 후 대면 미팅 일정을 잡아드립니다.
@@ -77,12 +79,13 @@ export default function ContactSection() {
                 required
                 value={form.role}
                 onChange={handleChange('role')}
-                className="w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-white placeholder:text-slate-400 focus:border-brand-gold focus:outline-none"
+                //className="w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 dark:text-white placeholder:text-slate-400 focus:border-brand-gold focus:outline-none"
+                className="w-full rounded-xl border border-white/10 bg-slate-800 px-4 py-3 text-white focus:border-brand-gold focus:outline-none appearance-none"
               >
-                <option value="">선택해주세요</option>
-                <option value="사업가">사업가</option>
-                <option value="전문직">전문직</option>
-                <option value="기타">기타</option>
+                <option value="" className="bg-slate-800 text-white">선택해주세요</option>
+                <option value="사업가" className="bg-slate-800 text-white">사업가</option>
+                <option value="전문직" className="bg-slate-800 text-white">전문직</option>
+                <option value="기타" className="bg-slate-800 text-white">기타</option>
               </select>
             </div>
             <div className="space-y-2">

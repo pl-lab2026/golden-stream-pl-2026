@@ -20,7 +20,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, ease: 'easeOut' }}
               className="text-sm tracking-wide text-slate-200/90"
             >
-              (주)골든스트림 | PL자산관리연구소
+              자산관리연구소
             </motion.p>
 
             <motion.h1
@@ -29,8 +29,11 @@ export default function HeroSection() {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.05 }}
               className="mt-4 text-balance text-4xl font-semibold tracking-tight text-white md:text-6xl"
             >
-              기업에는 CFO가 필요하듯, 당신의 자산에도{' '}
-              <span className="text-brand-gold">전략 경영</span>이 필요합니다.
+              열심히 번 돈의 45%{' '}
+              <br />
+              세금으로 내시겠습니까?
+              <br />
+              <span className="text-brand-gold">자산</span>으로 재투자 하시겠습니까?
             </motion.h1>
 
             <motion.p
@@ -39,7 +42,7 @@ export default function HeroSection() {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.12 }}
               className="mt-6 max-w-2xl text-base leading-relaxed text-slate-200/90 md:text-lg"
             >
-              중소기업 CEO, 고소득 전문직을 위한 Private Lab 기반의 자산 매니지먼트 솔루션
+              상위 1%의 선택, 세금 45%를 '수익'으로 바꾸는 로직
             </motion.p>
 
             <motion.div
@@ -58,11 +61,11 @@ export default function HeroSection() {
                     ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
                 }
               >
-                VIP 포트폴리오 진단 신청
+                세후 수익률 극대화 상담하기
               </Button>
-              <div className="text-xs text-slate-300/80">
+              {/* <div className="text-xs text-slate-300/80">
                 1차 유선 인터뷰 후 대면 미팅 일정을 잡아드립니다.
-              </div>
+              </div> */}
             </motion.div>
 
           </div>

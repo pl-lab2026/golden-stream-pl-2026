@@ -1,15 +1,15 @@
 const services = [
   {
     title: 'CEO & Biz Plan',
-    desc: '법인 잉여금 운용, 가지급금 정리, 가업 승계 및 절세 전략 수립',
+    desc: '* 법인 설립을 통한 소득세 절감\n* 법인자금 개인화전략\n* 가업승계 및 절세전략',
   },
   {
-    title: 'Professional Invest',
-    desc: '변액보험 펀드 리모델링, 글로벌 ETF 배분, 연금 자산 고도화',
+    title: 'Professional Investment',
+    desc: '* 변액보험 펀드 리모델링\n* 글로벌 ETF 배분\n* 연금 자산 고도화',
   },
   {
     title: 'Risk Management',
-    desc: '예기치 못한 위험 대비, 상속/증여 유동성 확보, 헬스케어 자금 설계',
+    desc: '* 예기치 못한 위험 대비\n* 상속/증여 유동성 확보\n* 헬스케어 자금 설계',
   },
 ]
 
@@ -17,7 +17,9 @@ export default function ServiceSection() {
   return (
     <section id="services" className="bg-white py-20 dark:bg-brand-dark md:py-28">
       <div className="mx-auto max-w-6xl px-5">
-        <p className="text-sm font-semibold uppercase tracking-[0.15em] text-slate-400">Service</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.15em] text-slate-400">
+          {/* Service */}
+        </p>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 dark:text-white md:text-4xl">
           무엇을 해결해 드릴까요?
         </h2>
@@ -32,10 +34,13 @@ export default function ServiceSection() {
                 <div className="text-sm font-semibold text-brand-gold">Case</div>
                 <h3 className="mt-2 text-xl font-semibold text-slate-900 dark:text-white">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-200/90">
-                  {item.desc}
+                  {/* {item.desc} */}
+                  {item.desc.split('\n').map((line, i) => (
+                    <span key={i}>{line}<br/></span>
+                  ))}
                 </p>
               </div>
-              <div className="mt-6 text-xs text-slate-400">Tailored Strategy</div>
+              {/* <div className="mt-6 text-xs text-slate-400">Tailored Strategy</div> */}
             </div>
           ))}
         </div>

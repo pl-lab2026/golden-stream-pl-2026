@@ -66,11 +66,11 @@ export default function Navbar() {
               className="flex items-baseline gap-2"
             >
               <span className="text-sm font-semibold tracking-tight">
-                (주)골든스트림
+                자산관리연구소
               </span>
-              <span className="text-xs text-slate-500 dark:text-slate-400">
+              {/* <span className="text-xs text-slate-500 dark:text-slate-400">
                 PL자산관리연구소
-              </span>
+              </span> */}
             </a>
 
             <nav className="hidden items-center gap-1 md:flex">
@@ -105,7 +105,7 @@ export default function Navbar() {
                     ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
                 }
               >
-                VIP 진단 신청
+                상담신청
               </Button>
               <Button
                 variant="outline"

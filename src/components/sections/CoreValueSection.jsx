@@ -3,37 +3,57 @@ import { Shield, Crown, FlaskConical, Landmark, HeartPulse } from 'lucide-react'
 const values = [
   {
     key: 'Principle & Logic',
-    labelHighlight: 'P',
-    title: 'Principle & Logic',
-    desc: '감과 운을 배제합니다. 철저한 데이터 분석과 논리적인 시장 대응으로 실패하지 않는 투자의 원칙을 세웁니다.',
+    title: '01\t',
+    labelHighlight1: 'P',
+    title1: 'Principle & ',
+    labelHighlight2: 'L',
+    title2: 'Logic',
+    desc1: '"운에 맡기지 마십시오"',
+    desc2: '데이터가 승인한 상위 1%의 논리',
     icon: Shield,
   },
   {
     key: 'Prime & Leader',
-    labelHighlight: 'P',
-    title: 'Prime & Leader',
-    desc: '분야의 리더에게 걸맞은 최상의 솔루션과 VIP 전용 포트폴리오를 제공합니다.',
+    title: '02\t',
+    labelHighlight1: 'P',
+    title1: 'Prime & ',
+    labelHighlight2: 'L',
+    title2: 'Leader',
+    desc1: '"독점적 기회"',
+    desc2: '대중에게는 닫혀있는 VIP 전용 루트',
     icon: Crown,
   },
   {
     key: 'Private Lab',
-    labelHighlight: 'P',
-    title: 'Private Lab',
-    desc: '획일화된 상품이 아닌, 개인 재무 상황을 연구하여 맞춤 전략을 설계합니다.',
+    title: '03\t',
+    labelHighlight1: 'P',
+    title1: 'Private ',
+    labelHighlight2: 'L',
+    title2: 'Lab',
+    desc1: '"1:1 정밀진단"',
+    desc2: '당신의 현금흐름을 개조하는 커스텀 전략',
     icon: FlaskConical,
   },
   {
     key: 'Prosperity & Legacy',
-    labelHighlight: 'P',
-    title: 'Prosperity & Legacy',
-    desc: '번영을 넘어 미래의 유산과 승계 플랜까지 설계합니다.',
+    title: '04\t',
+    labelHighlight1: 'P',
+    title1: 'Prosperity & ',
+    labelHighlight2: 'L',
+    title2: 'Legacy',
+    desc1: '"합리적인 부의 이전"',
+    desc2: '합법적인 최적의 증여 설계',
     icon: Landmark,
   },
   {
     key: 'People & Life',
-    labelHighlight: 'P',
-    title: 'People & Life',
-    desc: '숫자 너머 삶을 봅니다. 가족의 라이프스타일을 지키는 자산 경영을 합니다.',
+    title: '05\t',
+    labelHighlight1: 'P',
+    title1: 'People & ',
+    labelHighlight2: 'L',
+    title2: 'Life',
+    desc1: '"숫자 너머의 삶"',
+    desc2: '기록되는 숫자가 아닌, 기억되는 순간을 위해',
     icon: HeartPulse,
   },
 ]
@@ -43,10 +63,10 @@ export default function CoreValueSection() {
     <section id="values" className="bg-slate-50 py-20 dark:bg-brand-dark md:py-28">
       <div className="mx-auto max-w-6xl px-5">
         <p className="text-sm font-semibold uppercase tracking-[0.15em] text-slate-400">
-          Core Value
+          {/* Core Value */}
         </p>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 dark:text-white md:text-4xl">
-          PL의 5가지 자산 경영 원칙
+          PL의 5가지 자산 운용 원칙
         </h2>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-5">
@@ -58,16 +78,21 @@ export default function CoreValueSection() {
                 className="group flex h-full flex-col rounded-2xl border border-slate-200/70 bg-white/80 px-4 py-5 shadow-subtle transition hover:-translate-y-1 hover:shadow-card dark:border-white/10 dark:bg-white/5"
               >
                 <div className="flex items-center gap-3">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-gold/15 text-brand-gold">
+                  {/* <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-gold/15 text-brand-gold">
                     <Icon className="h-5 w-5" strokeWidth={1.8} />
-                  </div>
+                  </div> */}
                   <div className="text-sm font-semibold text-slate-900 dark:text-white">
-                    <span className="text-brand-gold">{item.labelHighlight}</span>
-                    {item.title.slice(1)}
+                    {item.title}
+                    <span className="text-brand-gold">{item.labelHighlight1}</span>
+                    {item.title1.slice(1)}
+                    <span className="text-brand-gold">{item.labelHighlight2}</span>
+                    {item.title2.slice(1)}
                   </div>
                 </div>
                 <p className="mt-4 text-sm leading-relaxed text-slate-600 dark:text-slate-200/90">
-                  {item.desc}
+                  {item.desc1}
+                  <br/>
+                  {item.desc2}
                 </p>
               </div>
             )
