@@ -66,7 +66,7 @@ export default function Navbar() {
               className="flex items-baseline gap-2"
             >
               <span className="text-sm font-semibold tracking-tight">
-                자산관리연구소
+                PL자산관리연구소
               </span>
               {/* <span className="text-xs text-slate-500 dark:text-slate-400">
                 PL자산관리연구소

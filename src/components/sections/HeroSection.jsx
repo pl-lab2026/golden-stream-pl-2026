@@ -20,7 +20,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, ease: 'easeOut' }}
               className="text-sm tracking-wide text-slate-200/90"
             >
-              자산관리연구소
+              PL자산관리연구소
             </motion.p>
 
             <motion.h1

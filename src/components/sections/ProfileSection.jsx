@@ -1,5 +1,5 @@
 import { UserRoundCheck } from 'lucide-react'
-import img_yj from '../assets/YJ.PNG'
+import img_yj from '../assets/YJ.JPG'
 import img_kj from '../assets/KJ.JPG'
 
 export default function ProfileSection() {
@@ -22,7 +22,7 @@ export default function ProfileSection() {
             />
             {/* 이미지 위에 텍스트를 겹치고 싶을 때만 아래 overlay 유지 (선택사항) */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
-              <div className="text-lg font-semibold">자산관리연구소 대표</div>
+              <div className="text-lg font-semibold">PL자산관리연구소 대표</div>
               <div className="mt-1 text-2xl font-bold">표광진</div>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function ProfileSection() {
             />
             {/* 이미지 위에 텍스트를 겹치고 싶을 때만 아래 overlay 유지 (선택사항) */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
-              <div className="text-lg font-semibold">자산관리연구소 이사</div>
+              <div className="text-lg font-semibold">PL자산관리연구소 이사</div>
               <div className="mt-1 text-2xl font-bold">이용재</div>
             </div>
           </div>
