@@ -10,7 +10,7 @@ export default function ProfileSection() {
           {/* Profile */}
         </p>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 dark:text-white md:text-4xl">
-          권위와 신뢰
+          구성원 소개
         </h2>
 
         <div className="mt-10 grid gap-8 rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-card dark:border-white/10 dark:bg-white/5 md:grid-cols-[1.1fr_1.6fr] md:p-8">
